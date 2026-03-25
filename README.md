@@ -22,11 +22,14 @@ Before running, the `--data_path` parameter is adjusted according to the specifi
 
 For your convenience, we provide quick start scripts, `FL_distill.sh` and `SC_task.sh` as running examples.
 
+As stated in the paper, when training from scratch, `FL_distill.sh` is executed first to save the pretrained weights. Subsequently, the pretrained weights are loaded in `SC_task.sh` to complete the second stage of training.
+
+To facilitate visualization of the non-IID setting, we add a data distribution visualization interface, `distribution_visualization`, in `dataset_distill.py`. The `computional_demand.py` file enables convenient calculation of model parameters and computational requirements of D2SC for quantitative analysis.
 
 
 ## Weight
 
-The complete trained model weights and execution logs are released as open source after the paper is accepted.
+The completely trained model weights and execution logs are released as open source after the paper is accepted.
 
 
 
